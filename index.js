@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const generate = require("./utils/generateMarkdown");
+const fs = require("fs");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -35,9 +36,10 @@ const questions = [
 		name: "test",
 	},
 	{
-		type: "input",
-		message: "Enter the license name:",
+		type: "list",
+		message: "Choose the license:",
 		name: "license",
+        choices: ['MIT', 'GPLv2', 'Apache']
 	},
 	{
 		type: "input",
@@ -52,12 +54,18 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    const readMeText = generate(data);
+    fs.writeFile(fileName, readMeText, err => {
+        if(!err) return;
+        console.log(err);
+    });
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(data => {
-        console.log(data);
+        writeToFile('README.md', data);
     });
 }
 
