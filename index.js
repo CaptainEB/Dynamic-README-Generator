@@ -42,6 +42,12 @@ const questions = [
         choices: ['MIT', 'GPLv2', 'Apache']
 	},
 	{
+		
+		type: "input",
+		message: "Enter the license info:",
+		name: "licenseText",
+	},
+	{
 		type: "input",
 		message: "Enter your Github username:",
 		name: "github",
@@ -65,7 +71,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(data => {
-        writeToFile('README.md', data);
+        writeToFile('GENERATED_README.md', data);
     });
 }
 

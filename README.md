@@ -1,62 +1,20 @@
+# README Generator
 
-  # title
+## Description
 
-  ## Description
-  
-  desc
-  
-  ## Table of Contents
-  
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [License](#License)
-  - [Contributing](#Contributing)
-  - [Tests](#Tests)
-  - [Questions](#Questions)
-  
-  <!-- ---------------------------- -->
-  <a id='Installation'></a>
-  
-  ## Installation
-  
-  adsf'dfgs
-  
-  <!-- ---------------------------- -->
-  <a id='Usage'></a>
-  
-  ## Usage Info
-  
-  asfd
+This application asks you a few questions about your own app and generates a readme file named 'GENERATED_README.md'. here is a link to the demonstration video:  
+https://drive.google.com/file/d/1KQhyFMhaox6DXndAazLkiKq-DbjVI8Nh/view
 
-  <!-- ---------------------------- -->
-  <a id='License'></a>
-  
-  ## License
-  
-  ![License](https://img.shields.io/badge/License-MIT-orange.svg)
-  
-  <!-- ---------------------------- -->
-  <a id='Contributing'></a>
-  
-  ## Contributing
-  
-  fdsa
-  
-  <!-- ---------------------------- -->
-  <a id='Tests'></a>
-  
-  ## Test
-  
-  asdf
+## screenshots
 
-  <!-- ---------------------------- -->
-  <a id='Questions'></a>
-  
-  ## Questions
-  
-  Link to my [Github](https://github.com/fsad)
+Console inputs:
+![Screenshot](./screenshots/console.png)
 
-  My email: adfs
-  
-  Reach by github first please
-    
+---
+
+Generated Readme file:
+![Screenshot](./screenshots/GENERATED_README.png)
+
+---
+
+This app was fully built by Sam Ebadi Sobi
